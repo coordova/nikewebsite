@@ -53,9 +53,14 @@ const Hero = () => {
                 {/*Three shoes images below*/}
                 <div className="flex sm:gap-6 gap-4 absolute -bottom-[5%] sm:left-[10%] max-sm:px-6">
                     {
-                        shoes.map((shoe) => (
-                            <div key={shoe}>
-                                <ShoeCard imgUrl={shoe} changeBigShoeImage={(shoe) => setBigShoeImg(shoe)} bigShoeImage={bigShoeImg} />
+                        shoes.map((image, index) => (
+                            <div key={index}>
+                                <ShoeCard
+                                    index={index}
+                                    imgUrl={image}
+                                    changeBigShoeImage={(shoe) => setBigShoeImg(shoe)}
+                                    bigShoeImage={bigShoeImg}
+                                />
                             </div>
                         ))
                     }

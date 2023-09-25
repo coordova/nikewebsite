@@ -2,7 +2,7 @@
 
 const ShoeCard = ({ imgUrl, changeBigShoeImage, bigShoeImage }) => {
 
-    console.log(imgUrl, changeBigShoeImage, bigShoeImage);
+    // console.log(imgUrl, changeBigShoeImage, bigShoeImage);
     const handleClick = () => {
         if (bigShoeImage !==  imgUrl.bigShoe) {
             changeBigShoeImage(imgUrl.bigShoe)
