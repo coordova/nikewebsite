@@ -1,7 +1,6 @@
 // import React from 'react'
 
 import {reviews} from "../constants/index.js";
-import {customer1} from "../assets/images/index.js";
 import ReviewCard from "../components/ReviewCard.jsx";
 
 const CustomerReviews = () => {
@@ -19,7 +18,7 @@ const CustomerReviews = () => {
             {/*Reviews Cards*/}
             <div className="mt-24 flex flex-1 justify-evenly items-center gap-14 max-lg:flex-col">
                 {
-                    reviews.map(review => (
+                    reviews.map((review) => (
                         <ReviewCard
                             key={review.customerName}
                             imgURL={review.imgURL}
@@ -29,7 +28,6 @@ const CustomerReviews = () => {
                         />
                     ))
                 }
-                <div></div>
             </div>
         </section>
     );
